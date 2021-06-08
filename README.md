@@ -1,16 +1,16 @@
 # TreasureHunt (Assignment)
 
-Sample input :
+### Url : http://localhost:8080/treasurehunt/solve
+### Method : POST
+### Request body : 
 
-curl --location --request POST 'http://localhost:8080/treasurehunt/solve' \
---header 'Content-Type: application/json' \
---data-raw '[
+[
     [34,21,32,14,25],
     [14,42,43,14,31],
     [54,45,52,42,23],
     [33,15,51,31,35],
     [21,52,33,13,23]
-]'
+]
 
 
 Output :
