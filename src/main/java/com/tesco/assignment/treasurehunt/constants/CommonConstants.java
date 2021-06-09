@@ -8,4 +8,8 @@ public class CommonConstants {
 
     public static String INPUT_NOT_VALID = "Input is not valid";
 
+    public static String TAB = "\t";
+
+    public static String NEW_LINE = "\n";
+
 }
