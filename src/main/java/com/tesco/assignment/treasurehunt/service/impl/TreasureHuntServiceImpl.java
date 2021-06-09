@@ -24,7 +24,7 @@ public class TreasureHuntServiceImpl implements TreasureHuntService {
 
         int temp = arr[row][column];
 
-        if (temp < 0) {
+        if (temp < 11 || temp > 55) {
             stringBuilder.append(CommonConstants.TREASURE_NOT_FOUND);
             return;
         }
@@ -45,5 +45,11 @@ public class TreasureHuntServiceImpl implements TreasureHuntService {
 
         solveTreasureHunt(arr, nextRow, nextColumn, stringBuilder);
 
+    }
+
+    private void validateElement(int temp) {
+        if (temp > 55 || temp < 11) {
+            throw new RuntimeException(CommonConstants.INPUT_NOT_VALID);
+        }
     }
 }

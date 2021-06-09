@@ -42,4 +42,21 @@ public class TreasureHuntTest {
 
     }
 
+    @Test
+    public void solveTreasureHuntTestInvalidInput() {
+
+        int[][] arr = { { 34, 21, 32, 41, 25 },
+                { 14, 42, 43, 66, 31 },
+                { 54, 45, 52, 42, 23 },
+                { 33, 15, 51, 31, 35 },
+                { 21, 22, 33, 13, 23 } };
+
+        Exception exception = assertThrows(RuntimeException.class, ()-> {
+           treasureHuntService.solveTreasureHunt(arr);
+        });
+
+        assertEquals(CommonConstants.INPUT_NOT_VALID, exception.getMessage());
+
+    }
+
 }
