@@ -1,9 +1,10 @@
-# TreasureHunt (Assignment)
+```
+TreasureHunt (Assignment)
 
-### Url : http://localhost:8080/treasurehunt/solve
-### Method : POST
-### Request body : 
+Url : http://localhost:8080/treasurehunt/solve
+Method : POST
 
+Request body : two fimentional array of integers. 
 [
     [34,21,32,14,25],
     [14,42,43,14,31],
@@ -13,7 +14,7 @@
 ]
 
 
-Output :
+Output : Formatted String
 
 Row	Column
 1	1
